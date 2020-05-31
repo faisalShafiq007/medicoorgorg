@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "156116264402",
+    "firebase_url": "https://medico-f2f1b.firebaseio.com",
+    "project_id": "medico-f2f1b",
+    "storage_bucket": "medico-f2f1b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156116264402:android:f99cf9ea5c987bc2a6540b",
+        "android_client_info": {
+          "package_name": "com.example.medicoorg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "156116264402-gqh1t7l0tt0n8b57tbqai7p6nfp6hu4l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.medicoorg",
+            "certificate_hash": "1ea7313142d56675829e47eec596300fe2a8e4f7"
+          }
+        },
+        {
+          "client_id": "156116264402-fqir1k50okrrirvska85ob27nms4ds6r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdh1X07LwjjVFfdZQSv4Pyd0tw9NenNEQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "156116264402-fqir1k50okrrirvska85ob27nms4ds6r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

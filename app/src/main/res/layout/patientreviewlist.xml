@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="25dp"
+        android:background="@drawable/border"
+        android:id="@+id/patientreviewlist_root"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/patientreviewlistimageview"
+            android:layout_width="132dp"
+            android:layout_height="87dp"
+            android:layout_marginStart="4dp"
+            android:scrollingCache="false"
+            android:smoothScrollbar="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/patientreviewlistname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:scrollingCache="false"
+            android:smoothScrollbar="true"
+            android:text="Doctor faisal"
+            android:textAlignment="center"
+            android:textColor="@color/main_color"
+            app:layout_constraintStart_toEndOf="@+id/patientreviewlistimageview"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/patientreviewlistspeacialist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:scrollingCache="false"
+            android:smoothScrollbar="true"
+            android:text="Child Specialist"
+            android:textAlignment="center"
+            android:textColor="@color/main_color"
+
+            app:layout_constraintEnd_toEndOf="@+id/patientreviewlistname"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/patientreviewlistname"
+            app:layout_constraintTop_toBottomOf="@+id/patientreviewlistname" />
+
+        <TextView
+            android:id="@+id/patientreviewlisthospitalname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Ganga Ram"
+            android:textAlignment="center"
+            android:textColor="@color/main_color"
+            android:scrollingCache="false"
+            android:smoothScrollbar="true"
+            app:layout_constraintEnd_toEndOf="@+id/patientreviewlistspeacialist"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/patientreviewlistspeacialist"
+            app:layout_constraintTop_toBottomOf="@+id/patientreviewlistspeacialist" />
+
+
+        <EditText
+            android:id="@+id/patientreviewlistedittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:hint="Please add a review about doctor over here"
+            android:inputType="textMultiLine"
+            android:textAlignment="center"
+            android:textColor="@color/main_color"
+            android:textColorHint="#D3D3D3"
+
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/patientreviewlistimageview" />
+
+        <Button
+            android:id="@+id/patientreviewlistbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/border"
+            android:text="Submit"
+            android:textColor="@color/main_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/patientreviewlistedittext" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

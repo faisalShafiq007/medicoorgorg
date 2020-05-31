@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:layout_margin="10dp"
+        android:id="@+id/doctorhistorylistroot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/doctorhistorylistcircleimageview"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:scrollingCache="false"
+            android:smoothScrollbar="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/doctorhistorylistlistname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:scrollingCache="false"
+            android:smoothScrollbar="true"
+            android:text="Doctor faisal"
+            android:textAlignment="center"
+            android:textColor="@color/main_color"
+            app:layout_constraintBottom_toBottomOf="@+id/doctorhistorylistcircleimageview"
+            app:layout_constraintStart_toEndOf="@+id/doctorhistorylistcircleimageview"
+            app:layout_constraintTop_toTopOf="@+id/doctorhistorylistcircleimageview"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/doctorhistorylistlistnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:scrollingCache="false"
+            android:smoothScrollbar="true"
+            android:text="Child Specialist"
+            android:textAlignment="center"
+            android:textColor="@color/main_color"
+            app:layout_constraintEnd_toEndOf="@+id/doctorhistorylistlistname"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/doctorhistorylistlistname"
+            app:layout_constraintTop_toBottomOf="@+id/doctorhistorylistlistname" />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout
+        >
+
+</LinearLayout>
